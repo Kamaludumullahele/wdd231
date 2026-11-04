@@ -24,8 +24,16 @@ header span {
     color: #3d405c;
 }
 
+.hamburger {
+    border: none;
+    background: none;
+    color: #3d405c;
+    cursor: pointer;
+}
+
 .hamburger::before {
     content: "\2630";
+    font-size: 2.5rem;
 }
 
 .hamburger.show::backdrop {
