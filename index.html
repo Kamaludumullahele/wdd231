@@ -10,8 +10,7 @@
     <!--stylesheets here-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
@@ -20,7 +19,13 @@
         <span>Kamal Udumulla Hele</span>
         <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
     </header>
-    <nav></nav>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#" aria-current="page">Home</a></li>
+            <li><a href="#">Chamber Assignment</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
     <main></main>
     <footer></footer>
     <script src="scripts/navigation.js"></script>
