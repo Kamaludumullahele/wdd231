@@ -77,3 +77,22 @@ const courses = [
         completed: false
     }
 ]
+const courseContainer = document.querySelector('#courses')
+
+function displayCourses(courseList) {
+    courseContainer.innerHTML = "";
+    courseList.forEach(course => {
+        const courseCard = document.createElement("div");
+
+        courseCard.textContent = `${course.subject} ${course.number}`;
+
+        if (course.completed) {
+            courseCard.classList.add("completed");
+        } else {
+            courseCard.classList.add("not-completed");
+        }
+
+        courseContainer.appendChild(courseCard);
+    });
+    displayCourses(courses);
+}

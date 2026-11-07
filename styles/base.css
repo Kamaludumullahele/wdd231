@@ -74,16 +74,18 @@ header span {
 h1 {
     margin-left: 10px;
 }
+
 /*********footer****************************/
 footer {
     background-color: lightgray;
     padding: 1rem 10px;
     text-align: center;
 }
+
 .social {
     display: flex;
     justify-content: center;
-    column-gap: 8px; 
+    column-gap: 8px;
 }
 
 .social a {
@@ -96,3 +98,8 @@ footer {
     border-radius: 4px;
 }
 
+/*************Course**************************/
+#course {
+    display: grid;
+    gap: 10px;
+}

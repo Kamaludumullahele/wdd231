@@ -31,7 +31,18 @@
             <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
-    <main></main>
+    <main>
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="course-buttons">
+                <button id="all">All Courses</button>
+                <button id="cse">CSE Courses</button>
+                <button id="wdd">WDD Courses</button>
+            </div>
+
+            <div class="courses"></div>
+        </section>
+    </main>
     <footer>
         <div class="social">
             <a href="https://facebook.com/kamal.chandrakumara" target="_blank"><img src="images/facebook.svg"
@@ -47,7 +58,8 @@
         <p>copyright &copy; <span id="currentyear"></span> Kamal Udumulla Hele | Canada</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/navigation.js"></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/course.js"></script>
 </body>
 
 </html>
