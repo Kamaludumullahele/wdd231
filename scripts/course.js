@@ -96,3 +96,20 @@ function displayCourses(courseList) {
     });
     displayCourses(courses);
 }
+const allButton = document.querySelector('#all');
+const cseButton = document.querySelector('#cse');
+const wddButton = document.querySelector('#wdd');
+
+allButton.addEventListener("click", () => {
+    displayCourses(courses);
+});
+
+wddButton.addEventListener("click", () => {
+    const wddCourses = courses.filter(course => course.subject === "wdd");
+    displayCourses(wddCourses);
+});
+
+cseButton.addEventListener("click", () => {
+    const cseCourses = courses.filter(course => course.subject === "cse");
+    displayCourses(cseCourses);
+})
