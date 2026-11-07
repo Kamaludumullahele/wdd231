@@ -77,7 +77,7 @@ const courses = [
         completed: false
     }
 ]
-const courseContainer = document.querySelector('#courses')
+const courseContainer = document.querySelector('.courses')
 
 function displayCourses(courseList) {
     courseContainer.innerHTML = "";
@@ -94,7 +94,6 @@ function displayCourses(courseList) {
 
         courseContainer.appendChild(courseCard);
     });
-    displayCourses(courses);
 }
 const allButton = document.querySelector('#all');
 const cseButton = document.querySelector('#cse');
@@ -105,11 +104,13 @@ allButton.addEventListener("click", () => {
 });
 
 wddButton.addEventListener("click", () => {
-    const wddCourses = courses.filter(course => course.subject === "wdd");
+    const wddCourses = courses.filter(course => course.subject === "WDD");
     displayCourses(wddCourses);
 });
 
 cseButton.addEventListener("click", () => {
-    const cseCourses = courses.filter(course => course.subject === "cse");
+    const cseCourses = courses.filter(course => course.subject === "CSE");
     displayCourses(cseCourses);
-})
+});
+
+displayCourses(courses);
