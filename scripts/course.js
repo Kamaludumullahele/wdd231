@@ -94,6 +94,13 @@ function displayCourses(courseList) {
 
         courseContainer.appendChild(courseCard);
     });
+
+    const totalCredits = courseList.reduce((total, course) => {
+        return total + course.credits;
+    }, 0);
+
+    document.querySelector('#totalCredits').textContent =
+        `Total Credits: ${totalCredits}`;
 }
 const allButton = document.querySelector('#all');
 const cseButton = document.querySelector('#cse');
@@ -114,3 +121,4 @@ cseButton.addEventListener("click", () => {
 });
 
 displayCourses(courses);
+
