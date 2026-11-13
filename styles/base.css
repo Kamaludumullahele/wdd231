@@ -76,6 +76,48 @@ h1 {
     margin-left: 10px;
 }
 
+main {
+    padding: 0 10px;
+}
+
+main section {
+    margin-bottom: 1rem;
+}
+
+main section h2 {
+    margin: 0;
+    padding: 0.6rem;
+    background-color: #222;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.about,
+.student-photo {
+    background-color: #ddd;
+}
+
+.about p {
+    margin: 0;
+    padding: 0.75rem;
+    line-height: 1.5;
+}
+
+.student-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.student-photo img {
+    display: block;
+    width: min(220px, 80%);
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
 /*********footer****************************/
 footer {
     background-color: lightgray;
@@ -117,15 +159,30 @@ h2 {
 }
 
 .course-buttons {
-    padding: 20px;
-    gap: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:grid ;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.75rem;
+    padding: 0.75rem;
+}
+
+.course-buttons button {
+    padding: 0.5rem;
+    border: 1px solid #888;
+    border-radius: 4px;
+    background-color: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#certificate #totalCredits {
+    text-align: center;
 }
 
 .completed {
     background-color: #588157;
+}
+.not-completed {
+    background-color: #e07a5f;
 }
 
 :root {

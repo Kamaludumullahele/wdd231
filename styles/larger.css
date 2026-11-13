@@ -4,7 +4,7 @@
    main,
    nav,
    footer {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 0 auto;
    }
 
@@ -27,5 +27,26 @@
 
    .navigation a {
       border: none;
+   }
+
+   main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1rem;
+   }
+
+   main > h1,
+   #certificate {
+      grid-column: 1 / -1;
+   }
+
+   .about,
+   .student-photo {
+      min-height: 18rem;
+   }
+
+   .courses,
+   .course-buttons {
+      grid-template-columns: repeat(3, 1fr);
    }
 }
