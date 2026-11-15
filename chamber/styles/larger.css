@@ -1,0 +1,19 @@
+@media only screen and (min-width: 38rem) {
+    header,
+    main,
+    nav,
+    footer {
+        max-width: auto;
+        margin: 0 auto;
+    }
+
+    header {
+        align-items: center;
+        grid-template-columns: 24px auto 1fr;
+        padding: 5px max(10px, calc((100% - 1200px) / 2));
+    }
+
+    header .navigation {
+        grid-column: 3;
+    }
+}
