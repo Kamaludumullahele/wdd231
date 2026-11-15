@@ -16,4 +16,29 @@
     header .navigation {
         grid-column: 3;
     }
+    button.theme-button {
+        display: inline;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        flex: 1;
+        text-align: center;
+    }
+
+    .navigation a {
+        display: block;
+        width: 100%;
+    }
+
+    .navigation li.extra {
+        display: none;
+    }
+
 }
