@@ -1,0 +1,74 @@
+{
+    "businesses": [
+        {
+            "name": "Pelican Pier Seafood Bar",
+            "address": "10-4404 14 St NW, Calgary, AB T2K 1J5",
+            "phone": "(403) 289-6100",
+            "website": "https://www.pelicanpier.ca/",
+            "image": "pelican-pier.webp",
+            "membershipLevel": 3,
+            "category": "Seafood Restaurant",
+            "description": "Family-owned seafood restaurant and fresh fish market."
+        },
+        {
+            "name": "Chinook School of Music",
+            "address": "1101 48 Ave NW, Calgary, AB T2K 0J6",
+            "phone": "(403) 246-8446",
+            "website": "https://www.chinookschoolofmusic.com/",
+            "image": "chinook-school-of-music.webp",
+            "membershipLevel": 3,
+            "category": "Music Education",
+            "description": "Music lessons and programmes for students of different ages."
+        },
+        {
+            "name": "4th Spot Kitchen & Bar",
+            "address": "2620 4 St NW, Calgary, AB T2M 3A1",
+            "phone": "(403) 984-3474",
+            "website": "https://4thspot.com/",
+            "image": "4th-spot-kitchen.webp",
+            "membershipLevel": 2,
+            "category": "Restaurant & Bar",
+            "description": "Local family-owned restaurant serving casual favourites."
+        },
+        {
+            "name": "Queens Breakfast Cocktails",
+            "address": "3927 Edmonton Trail NE, Calgary, AB T2E 6T1",
+            "phone": "(403) 764-0878",
+            "website": "https://queensyyc.ca/",
+            "image": "queens-breakfast-cocktails.webp",
+            "membershipLevel": 2,
+            "category": "Breakfast Restaurant",
+            "description": "Breakfast and brunch restaurant in the Greenview area."
+        },
+        {
+            "name": "Citizen Brewing Company",
+            "address": "227 35 Ave NE, Calgary, AB T2E 2K5",
+            "phone": "(403) 474-4677",
+            "website": "https://www.citizenbrewingcompany.com/",
+            "image": "citizen-brewing-company.webp",
+            "membershipLevel": 2,
+            "category": "Brewery & Restaurant",
+            "description": "Calgary brewery and restaurant with a taproom and patio."
+        },
+        {
+            "name": "Dairy Lane Cafe",
+            "address": "319 19 St NW, Calgary, AB T2N 2J2",
+            "phone": "(403) 283-2497",
+            "website": "https://www.dairylanecafe.ca/",
+            "image": "dairy-lane-cafe.webp",
+            "membershipLevel": 1,
+            "category": "Cafe & Restaurant",
+            "description": "Locally owned cafe focused on wholesome ingredients and meals."
+        },
+        {
+            "name": "Big T's BBQ & Smokehouse - McMahon",
+            "address": "2138 Crowchild Trail NW, Calgary, AB",
+            "phone": "(403) 284-5959",
+            "website": "https://bigtsbbq.com/",
+            "image": "big-ts-bbq.webp",
+            "membershipLevel": 1,
+            "category": "Barbecue Restaurant",
+            "description": "Smokehouse serving slow-smoked barbecue dishes."
+        }
+    ]
+}
