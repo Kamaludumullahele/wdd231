@@ -1,4 +1,5 @@
 @media only screen and (min-width: 38rem) {
+
     header,
     main,
     nav,
@@ -16,15 +17,13 @@
     header .navigation {
         grid-column: 3;
     }
-    button.theme-button {
-        display: inline;
-    }
 
     .navigation ul {
         display: flex;
         flex-wrap: nowrap;
-        gap: 0;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: flex-end;
+        gap: none;
     }
 
     .navigation li {
@@ -40,5 +39,20 @@
     .navigation li.extra {
         display: none;
     }
+
+    button.theme-button {
+        display: flex;
+        grid-column: 4;
+        margin-left: 10px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    h1 {
+        margin-left: 10px;
+    }
+
 
 }
