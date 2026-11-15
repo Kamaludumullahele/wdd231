@@ -14,16 +14,47 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <img src="chamber-logo.svg" alt="chamber logo">
+    <!-----------Facebook meta-->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Chamber of Commerce Business Directory">
     <meta property="og:description" content="Discover local businesses, services, and organisations in our community.">
     <meta property="og:url" content="https://kamaludumullahele.github.io/wdd231/chamber/directory.html">
-    <meta property="og:image" content="https://example.com/path/to/chamber-image.jpg">
-
+    <meta property="og:image" content="https://kamaludumullahele.github.io/wdd231/chamber/chamber-logo.svg">
+    <!----------Style links-->
+    <link rel="stylesheet" href="styles/directory-base.css">
 </head>
 
 <body>
+    <header>
+        <img class="chamber-logo" src="chamber-logo.svg" alt="Chamber logo">
+        <span>North Haven Chamber of Commerce</span>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#" aria-current="page">Bisiness Directory</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="../images/facebook.svg" alt="facebook profile"
+                    width="24" height="24"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram.svg"
+                    alt="instagram profile" width="24" height="24"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="../images/linkedin.svg" alt="linkedin profile"
+                    width="24" height="24"></a>
+        </div>
+        <div>
+            <P><span>WDD231 Chamber Project<br>Kamal Udumulla Hele</span></P>
+            <p>copyright &copy; <span id="currentyear"></span> Kamal Udumulla Hele | Canada</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 
 </body>
 
