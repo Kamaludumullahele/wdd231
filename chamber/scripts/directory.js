@@ -1,6 +1,8 @@
 const url = `https://kamaludumullahele.github.io/wdd231/chamber/data/members.json`;
 
-const cards = document.querySelector(`#cards`);
+const cards = document.querySelector(`#business-cards`);
+const gridButton = document.querySelector("#gridButton");
+const listButton = document.querySelector("#listButton");
 // creating a async/await
 async function getBusinessesData(params) {
     try {
@@ -38,12 +40,19 @@ const displayBusinesses = (businesses) => {
         cards.appendChild(card);
     });
 };
+// adding button functionality
+gridButton.addEventListener("click", () => {
+    cards.classList.add("grid");
+    cards.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    cards.classList.add("list");
+    cards.classList.remove("grid");
+});
 
 getBusinessesData();
 
-// adding grid and list buttons
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
 
 // adding footer content 
 document.getElementById("currentyear").textContent = new Date().getFullYear();

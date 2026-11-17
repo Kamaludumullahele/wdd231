@@ -114,3 +114,45 @@ footer {
 .footer-project p {
     margin: 0.35rem 0;
 }
+
+#card-buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 40px;
+   padding: 10px;  
+}
+
+button {
+    font-weight: bold;
+    background-color: #ddd;
+    padding: 10px;
+}
+#business-cards section {
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+#business-cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+#business-cards.list {
+    display: block;
+}
+
+#business-cards.list section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-width: 0 0 1px;
+    padding: 0.5rem 0;
+}
+
+#business-cards.list h2,
+#business-cards.list p {
+    margin: 0;
+}
