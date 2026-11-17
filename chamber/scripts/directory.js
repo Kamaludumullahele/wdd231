@@ -17,22 +17,34 @@ async function getBusinessesData(params) {
 
 const displayBusinesses = (businesses) => {
     businesses.forEach((business) => {
-        const card = document.createElement(`section`);
-        const logo = document.createElement(`img`);
-        const businessName = document.createElement(`h2`);
-        const phone = document.createElement(`h3`)
-        const webAddress = document.createElement(`url`);
+        const card = document.createElement("section");
+        const logo = document.createElement("img");
+        const businessName = document.createElement("h2");
+        const phone = document.createElement("p");
+        const webAddress = document.createElement("a");
 
-        logo.textContent = `${business.name}`;
-        logo.setAttribute(`src`, business.image);
-        logo.setAttribute(`alt`, `logo of the business`);
-        logo.setAttribute(`loading`, `lazy`);
-        logo.setAttribute(`width`, `120`);
-        logo.setAttribute(`height`, `80`);
+        businessName.textContent = business.name;
+        phone.textContent = business.phone;
+        webAddress.textContent = business.website;
+        webAddress.href = business.website;
 
-        card.appendChild(businessName);
-        card.appendChild(logo);
+        logo.src = `images/${business.image}`;
+        logo.alt = `Logo of ${business.name}`;
+        logo.loading = "lazy";
+        logo.width = 120;
+        logo.height = 80;
+
+        card.append(businessName, logo, phone, webAddress);
         cards.appendChild(card);
+    });
+};
 
-    })
-}
+getBusinessesData();
+
+// adding grid and list buttons
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+
+// adding footer content 
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
