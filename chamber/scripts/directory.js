@@ -30,7 +30,9 @@ const displayBusinesses = (businesses) => {
         logo.setAttribute(`width`, `120`);
         logo.setAttribute(`height`, `80`);
 
-
+        card.appendChild(businessName);
+        card.appendChild(logo);
+        cards.appendChild(card);
 
     })
 }
