@@ -35,7 +35,7 @@
             "address": "3927 Edmonton Trail NE, Calgary, AB T2E 6T1",
             "phone": "(403) 764-0878",
             "website": "https://queensyyc.ca/",
-            "image": "queens-breakfast-cocktails.webp",
+            "image": "queens-logo.svg",
             "membershipLevel": 2,
             "category": "Breakfast Restaurant",
             "description": "Breakfast and brunch restaurant in the Greenview area."
@@ -45,7 +45,7 @@
             "address": "227 35 Ave NE, Calgary, AB T2E 2K5",
             "phone": "(403) 474-4677",
             "website": "https://www.citizenbrewingcompany.com/",
-            "image": "citizen-brewing-company.webp",
+            "image": "citizen-brewing-company.png",
             "membershipLevel": 2,
             "category": "Brewery & Restaurant",
             "description": "Calgary brewery and restaurant with a taproom and patio."
@@ -55,7 +55,7 @@
             "address": "319 19 St NW, Calgary, AB T2N 2J2",
             "phone": "(403) 283-2497",
             "website": "https://www.dairylanecafe.ca/",
-            "image": "dairy-lane-cafe.webp",
+            "image": "dairy-lane-cafe.png",
             "membershipLevel": 1,
             "category": "Cafe & Restaurant",
             "description": "Locally owned cafe focused on wholesome ingredients and meals."
@@ -65,7 +65,7 @@
             "address": "2138 Crowchild Trail NW, Calgary, AB",
             "phone": "(403) 284-5959",
             "website": "https://bigtsbbq.com/",
-            "image": "big-ts-bbq.webp",
+            "image": "big-ts-bbq.png",
             "membershipLevel": 1,
             "category": "Barbecue Restaurant",
             "description": "Smokehouse serving slow-smoked barbecue dishes."
