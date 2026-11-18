@@ -45,14 +45,14 @@
             </ul>
         </nav>
         <button class="theme-button" aria-label="change theme">◐</button>
-        <button id="menu-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
+        <button id="menu-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-bar">&#9776;</button>
     </header>
     <main>
         <h1>Business Directory</h1>
         <section id="businesses">
             <div id="card-buttons">
-                <button id="gridButton">Grid</button>
-                <button id="listButton">List</button>
+                <button id="gridButton" aria-pressed="true">Grid</button>
+                <button id="listButton" aria-pressed="false">List</button>
             </div>
             <div id="business-cards" class="grid"></div>
         </section>
