@@ -4,7 +4,6 @@
     main,
     nav,
     footer {
-        max-width: auto;
         margin: 0 auto;
     }
 
@@ -12,11 +11,6 @@
         align-items: center;
         grid-template-columns: 24px auto 1fr;
         padding: 5px max(10px, calc((100% - 1200px) / 2));
-    }
-
-    header img {
-        margin: left 0;
-        ;
     }
 
     header .navigation {
@@ -34,7 +28,6 @@
         flex-wrap: nowrap;
         align-items: center;
         justify-content: flex-end;
-        gap: none;
     }
 
     .navigation li {
