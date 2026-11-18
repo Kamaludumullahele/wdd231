@@ -14,17 +14,17 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <!-----------Facebook meta-->
+    
     <meta property="og:type" content="website">
     <meta property="og:title" content="Chamber of Commerce Business Directory">
     <meta property="og:description" content="Discover local businesses, services, and organisations in our community.">
     <meta property="og:url" content="https://kamaludumullahele.github.io/wdd231/chamber/directory.html">
-    <meta property="og:image" content="https://kamaludumullahele.github.io/wdd231/chamber/chamber-logo.svg">
-    <!----------Style links-->
+    <meta property="og:image" content="https://kamaludumullahele.github.io/wdd231/chamber/images/chamber-logo.svg">
+    
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <!---------------Script---------->
+    
     <script src="scripts/directory.js" defer></script>
 </head>
 
@@ -34,7 +34,7 @@
         <span>North Haven Chamber of Commerce</span>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="#">Home</a></li> 
+                <li><a href="#">Home</a></li>
                 <li class="current"><a href="#" aria-current="page">Bisiness Directory</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Join</a></li>
@@ -45,17 +45,18 @@
             </ul>
         </nav>
         <button class="theme-button" aria-label="change theme">◐</button>
-        <button id="menu-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-bar">&#9776;</button>
+        <button id="menu-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+            aria-controls="nav-bar">&#9776;</button>
     </header>
     <main>
         <h1>Business Directory</h1>
-        <section id="businesses">
+        <div id="businesses">
             <div id="card-buttons">
                 <button id="gridButton" aria-pressed="true">Grid</button>
                 <button id="listButton" aria-pressed="false">List</button>
             </div>
             <div id="business-cards" class="grid"></div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="footer-contact">
