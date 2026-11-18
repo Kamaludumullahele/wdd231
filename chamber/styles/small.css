@@ -16,7 +16,7 @@ header {
     padding: 5px 10px;
     border-bottom: solid 1px #ddd;
     background-color: orange;
-    color: black;
+    color: #3d405c;
     font-weight: bold;
 }
 
@@ -76,17 +76,23 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #eee;
+    background-color: white;
 }
 
 .navigation a:hover {
-    background-color: #f4f1de;
+    background-color: white;
 }
 
 /***************Main*****************************/
 main {
     background-color: whitesmoke;
     margin: 0;
+}
+
+main h1 {
+    color: #3d405c;
+    margin-top: 0;
+    padding-top: 1rem;
 }
 
 /*****************Footer***********************/
@@ -96,7 +102,7 @@ footer {
     align-items: center;
     gap: 1.5rem;
     background-color: orange;
-    color: black;
+    color: #3d405c;
     padding: 1.5rem 1rem;
     text-align: center;
 }
@@ -152,12 +158,12 @@ footer {
 
 button {
     font-weight: bold;
-    background-color: #ddd;
+    background-color: white;
     padding: 10px;
 }
 
 #business-cards section {
-    border: 1px solid #ddd;
+    border: 1px solid #3d405c;
     padding: 1rem;
 }
 
@@ -201,15 +207,15 @@ button {
     gap: 1rem;
     align-items: center;
     padding: 1rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid lightgrey;
 }
 
 #business-cards.list section:nth-child(even) {
-    background-color: lightgray;
+    background-color: white;
 }
 
 #business-cards.list section:nth-child(odd) {
-    background-color: #fff;
+    background-color: lightgray;
 }
 
 #business-cards.list img {
@@ -217,13 +223,13 @@ button {
 }
 
 #business-cards.grid img[src$="chinook-school-of-music.png"] {
-    background-color: #333;
+    background-color: #3d405c;
     padding: 0.5rem;
     border-radius: 4px;
 }
 
 #business-cards.grid img[src$="dairy-lane-cafe.png"] {
-    background-color: black;
+    background-color: #3d405c;
     padding: 0.5rem;
     border-radius: 4px;
 }
@@ -265,6 +271,6 @@ button {
 }
 
 #card-buttons button[aria-pressed="true"] {
-    background-color: #333;
+    background-color: #3d405c;
     color: white;
 }
