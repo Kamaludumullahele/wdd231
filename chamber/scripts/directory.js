@@ -19,7 +19,7 @@ async function getBusinessesData() {
 
 const displayBusinesses = (businesses) => {
     const fragment = document.createDocumentFragment();
-    
+
     businesses.forEach((business) => {
         const card = document.createElement("section");
         const logo = document.createElement("img");
@@ -43,7 +43,7 @@ const displayBusinesses = (businesses) => {
         card.append(businessName, logo, address, phone, webAddress);
         fragment.appendChild(card);
     });
-    
+
     cards.appendChild(fragment);
 };
 
