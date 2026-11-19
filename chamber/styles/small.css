@@ -107,14 +107,20 @@ footer {
     text-align: center;
 }
 
-.footer-contact {
+.footer-contact,
+.footer-project {
     justify-self: center;
     text-align: center;
 }
 
-.footer-contact p {
+.footer-contact p,
+.footer-project p {
     margin: 0.25rem 0;
     font-size: 0.95rem;
+}
+
+.footer-project p {
+    font-size: 0.9rem;
 }
 
 .social {
@@ -136,16 +142,6 @@ footer {
 .social a img {
     width: 30px;
     height: 30px;
-}
-
-.footer-project {
-    justify-self: center;
-    text-align: center;
-}
-
-.footer-project p {
-    margin: 0.25rem 0;
-    font-size: 0.9rem;
 }
 
 #card-buttons {
@@ -201,6 +197,13 @@ button {
     font-size: 0.95rem;
 }
 
+#business-cards.grid img[src$="chinook-school-of-music.png"],
+#business-cards.grid img[src$="dairy-lane-cafe.png"] {
+    background-color: #3d405c;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
 #business-cards.list section {
     display: grid;
     grid-template-columns: repeat(4, 1.5fr);
@@ -220,18 +223,6 @@ button {
 
 #business-cards.list img {
     display: none;
-}
-
-#business-cards.grid img[src$="chinook-school-of-music.png"] {
-    background-color: #3d405c;
-    padding: 0.5rem;
-    border-radius: 4px;
-}
-
-#business-cards.grid img[src$="dairy-lane-cafe.png"] {
-    background-color: #3d405c;
-    padding: 0.5rem;
-    border-radius: 4px;
 }
 
 #business-cards.list h2 {

@@ -3,8 +3,8 @@ const url = `data/members.json`;
 const cards = document.querySelector(`#business-cards`);
 const gridButton = document.querySelector("#gridButton");
 const listButton = document.querySelector("#listButton");
-// creating a async/await
-async function getBusinessesData(params) {
+
+async function getBusinessesData() {
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -18,6 +18,8 @@ async function getBusinessesData(params) {
 }
 
 const displayBusinesses = (businesses) => {
+    const fragment = document.createDocumentFragment();
+    
     businesses.forEach((business) => {
         const card = document.createElement("section");
         const logo = document.createElement("img");
@@ -39,17 +41,18 @@ const displayBusinesses = (businesses) => {
         logo.height = 80;
 
         card.append(businessName, logo, address, phone, webAddress);
-        cards.appendChild(card);
+        fragment.appendChild(card);
     });
+    
+    cards.appendChild(fragment);
 };
-// adding button functionality
+
 gridButton.addEventListener("click", () => {
     cards.classList.add("grid");
     cards.classList.remove("list");
     gridButton.setAttribute("aria-pressed", "true");
     listButton.setAttribute("aria-pressed", "false");
 });
-
 
 listButton.addEventListener("click", () => {
     cards.classList.add("list");
@@ -58,23 +61,16 @@ listButton.addEventListener("click", () => {
     listButton.setAttribute("aria-pressed", "true");
 });
 
-
 getBusinessesData();
 
-// adding navbar and hamburger button responsive features
-// getting a nav button reference 
 const navButton = document.querySelector('#menu-button');
-// creating a nav Bar reference:
 const navBar = document.querySelector('#nav-bar');
 
-// creating an eventlistner
 navButton.addEventListener('click', () => {
     const isOpen = navButton.classList.toggle('show');
     navButton.setAttribute('aria-expanded', isOpen);
     navBar.classList.toggle('show');
 });
 
-
-// adding footer content 
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
