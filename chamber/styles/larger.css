@@ -85,4 +85,16 @@
         justify-self: end;
         text-align: left;
     }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
 }
