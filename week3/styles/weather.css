@@ -1,0 +1,26 @@
+#card {
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: antiquewhite;
+    color: black;
+    text-align: center;
+}
+
+#card h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+#card h3 {
+    font-size: x-large;
+}
+
+#current-temp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: brown;
+}
+
+#weather-caption {
+    font-size: xx-large;
+}
