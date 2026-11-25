@@ -299,3 +299,14 @@ button {
     margin: 10px 0 0 0;
     color: white;
 }
+.cta {
+    display: block;
+    background-color: white;
+    padding: 10px;
+    color: #3d405c;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+}
