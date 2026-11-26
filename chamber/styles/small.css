@@ -326,7 +326,7 @@ button {
 .weather,
 .forecast {
     display: block;
-    background-color: #ddd;
+    background-color: lightyellow;
     padding-left: 10px;
     border-radius: 8px;
     border: 1px solid;
