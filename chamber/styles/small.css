@@ -310,3 +310,9 @@ button {
     text-align: center;
     margin-top: 20px;
 }
+.weather-container {
+    display: grid;
+    gap: 10px;
+    padding: 1rem;
+    color: #3d405c;
+}

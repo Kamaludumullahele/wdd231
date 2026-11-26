@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/directory.js" defer></script>
+    <script src="../scripts/prophets.js" defer></script>
 </head>
 
 <body>
@@ -58,8 +59,23 @@
                 <p>Connecting local businesses and community</p>
                 <a href="join.html" class="cta">Join the Chamber</a>
             </div>
-
         </section>
+        <div class="weather-container">
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <h3>Calgary, Alberta</h3>
+                <p>Current temperature: <span id="current-temp"></span></p>
+                <figure id="weather-figure">
+                    <img id="weather-icon" alt="" hidden>
+                    <figcaption id="weather-caption"></figcaption>
+                </figure>
+            </section>
+        
+            <section class="forecast">
+                <h2>Calgary Weather Forecast</h2>
+                <div id="forecast">Loading forecast...</div>
+            </section>
+        </div>
     </main>
 
     <footer>
