@@ -326,7 +326,7 @@ button {
 .weather,
 .forecast {
     display: block;
-    background-color: lightyellow;
+    background-color: lightgray;
     padding-left: 10px;
     border-radius: 8px;
     border: 1px solid;
@@ -344,4 +344,38 @@ button {
     text-transform: capitalize;
     font-weight: 600;
     font-size: large;
+}
+
+#forecast {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#forecast p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#forecast span {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#forecast img {
+    display: grid;
+    max-width: 100%;
+    border: #3d405c;
+}
+
+#forecast .forecast-description {
+    font-size: 1rem;
 }
