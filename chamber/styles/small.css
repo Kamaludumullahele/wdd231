@@ -265,18 +265,21 @@ button {
     background-color: #3d405c;
     color: white;
 }
+
 .hero {
     position: relative;
     width: 100%;
     height: 300px;
     overflow: hidden;
 }
+
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
+
 .hero-content {
     position: absolute;
     top: 50%;
@@ -285,7 +288,7 @@ button {
     text-align: center;
     z-index: 1;
     text-shadow: 2px 2px 4px whitesmoke;
-    
+
 }
 
 .hero-content h1 {
@@ -299,6 +302,7 @@ button {
     margin: 10px 0 0 0;
     color: white;
 }
+
 .cta {
     display: block;
     background-color: white;
@@ -310,9 +314,34 @@ button {
     text-align: center;
     margin-top: 20px;
 }
+
 .weather-container {
     display: grid;
     gap: 10px;
     padding: 1rem;
     color: #3d405c;
+    grid-template-columns: 1fr 2fr;
+}
+
+.weather,
+.forecast {
+    display: block;
+    background-color: #ddd;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+#current-temp {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#weather-figure {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: large;
 }
